@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="yoodlize2.0"
+    errors="0" failures="0" hostname="" id="" package="yoodlize2.0" skipped="0"
+    tests="3" time="11.48" timestamp="">
+  
+    <testcase name="Drill Search Test" classname="yoodlize2.0" time="5.366" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Lawnmower Search Page Search Test" classname="yoodlize2.0" time="2.642" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Recreational Vehicles See All Test..." classname="yoodlize2.0" time="3.468" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

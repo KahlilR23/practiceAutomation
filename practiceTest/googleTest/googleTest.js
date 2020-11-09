@@ -6,6 +6,7 @@ module.exports = {
     after: browser=> {
         browser.end()
     },
+    //Basic search test for Ironman and batman
     'Google Search': browser =>{
         browser
             .setValue('input[name="q"]',['ironman', browser.Keys.ENTER])

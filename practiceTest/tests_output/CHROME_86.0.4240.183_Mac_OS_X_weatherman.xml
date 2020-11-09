@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="1">
+
+  <testsuite name="weatherman"
+    errors="2" failures="0" hostname="" id="" package="weatherman" skipped="0"
+    tests="1" time="0.002000" timestamp="">
+  
+    <testcase name="Weather Search Test" classname="weatherman" time="0.002000" assertions="0">
+    <error message="browser.page.weatherPage is not a function" type="error"><![CDATA[
+    TypeError: agePobjects.end is not a function
+    at Object.after (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/weathermanTest/weatherman.js:10:14)
+    at Context.callAsync (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:395:20)
+    at Context.invokeMethod (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:346:21)
+    at /usr/local/lib/node_modules/nightwatch/lib/testsuite/hooks/_basehook.js:79:24
+    at new Promise (&lt;anonymous&gt;)
+    at AfterAll.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/hooks/_basehook.js:54:14)
+    at Runnable.__runFn (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:186:35)
+    at Runnable.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/runnable.js:123:21)
+    at TestSuite.createRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:443:33)
+    at TestSuite.handleRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:448:18)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        TypeError: browser.page.weatherPage is not a function
+   - verify if page objects are setup correctly, check &#34;page_objects_path&#34; in your config
+       at Object.beforeEach (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/weathermanTest/weatherman.js:4:36)
+       at new Promise (&lt;anonymous&gt;)
+  TypeError: agePobjects.end is not a function
+   - writing an ES6 async test case? - keep in mind that commands return a Promise; 
+   - writing unit tests? - make sure to specify &#34;unit_tests_mode=true&#34; in your config.
+       at Object.after (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/weathermanTest/weatherman.js:10:14)
+       at new Promise (&lt;anonymous&gt;)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
