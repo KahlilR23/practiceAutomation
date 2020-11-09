@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="5">
+
+  <testsuite name="checkpoint2Test"
+    errors="0" failures="0" hostname="" id="" package="checkpoint2Test" skipped="0"
+    tests="5" time="3.026" timestamp="">
+  
+    <testcase name="Odds and Evens Test..." classname="checkpoint2Test" time="0.6800" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Filter Objects Test..." classname="checkpoint2Test" time="0.6160" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Filter String Test..." classname="checkpoint2Test" time="1.051" assertions="16">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Palindrome Test..." classname="checkpoint2Test" time="0.3650" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Sum Test..." classname="checkpoint2Test" time="0.3140" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
