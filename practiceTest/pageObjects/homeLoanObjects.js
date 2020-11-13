@@ -23,7 +23,12 @@ module.exports = {
         foreC:  'button[value="Has had a foreclosure before"]',
         both:   'button[value="Has had both a foreclosure and a bankruptcy"]',
         addOne: 'input[texte="addressOne"]',
-
+        fName:  'input[id="first"]',
+        lName:  'input[id="last"]',
+        email:  'input[id="email"]',
+        semd:   'button[name="sendButton"]',
+        again:  'button[name="restartButton"]',
+        pText:  'p[name="prompText"]',
 
 
  
