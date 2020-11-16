@@ -50,6 +50,9 @@ module.exports = {
         //Credit score?
 
 
+        //Bankruptcy
+
+
 
 
 
