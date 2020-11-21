@@ -129,8 +129,6 @@ module.exports = {
             .getText('@price', function(result) {
                 console.log('Price:', result.value); //Ask about how to incorporate .length to get the last price
               })
-            .pause(5000)
-
     }
 
 }
