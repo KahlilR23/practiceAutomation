@@ -1,0 +1,71 @@
+module.exports = {
+
+    url: 'https://pcpartpicker.com/',
+    elements: {
+        system:       'li[class="nav__categories--partlist"]',
+        products:     'li[class="nav__categories--browseProducts js-trigger--browseProducts"]',
+        cpu:{
+            selector: '(//a[contains(@href, "/products/cpu/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        //addCpu:       'button[data-product-tag="9nm323"]',
+        addCpu:       'button[data-product-tag=',
+        cooler:{
+            selector: '(//a[contains(@href, "/products/cpu-cooler/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        mother:{
+            selector:  '(//a[contains(@href, "/products/motherboard/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        mem:{
+            selector:  '(//a[contains(@href, "/products/memory/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        stor:{
+            selector:  '(//a[contains(@href, "/products/internal-hard-drive/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        vc:{
+            selector:  '(//a[contains(@href, "/products/video-card/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        case:{
+            selector:  '(//a[contains(@href, "/products/case/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        power:{
+            selector:  '(//a[contains(@href, "/products/power-supply/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        oDrive:{
+            selector:  '(//a[contains(@href, "/products/optical-drive/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        OS:{
+            selector:  '(//a[contains(@href, "/products/os/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        soft:{
+            selector:  '(//a[contains(@href, "/products/software/")])[15]',
+            locateStrategy: 'xpath'
+        },
+        mon:{
+            selector:  '(//a[contains(@href, "/products/monitor/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        ES:{
+            selector:  '(//a[contains(@href, "/products/external-hard-drive/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        lap:{
+            selector:  '(//a[contains(@href, "/products/laptop/")])[4]',
+            locateStrategy: 'xpath'
+        },
+        price:{
+            selector:  '(//td[contains(@class, "td__price")])[2]',
+            locateStrategy: 'xpath'
+        },
+    }
+}
+    
