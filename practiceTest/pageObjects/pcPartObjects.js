@@ -63,9 +63,11 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         price:{
-            selector:  '(//td[contains(@class, "td__price")])[2]',
+            selector:     '//div[@id="partlist"]/div[2]/section[2]/div/div[2]/table/tbody/tr[23]',    //'(//td[contains(@class, "td__price")])[9]',
             locateStrategy: 'xpath'
         },
+        name: 'td.td__name',
+        delete: 'a[class="pp_delete_part"]',
     }
 }
     

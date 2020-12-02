@@ -24,6 +24,9 @@ module.exports = {
             .end()
     },
     'Build A Computer Test...': browser => {
+        
+        //for (i = 0; i < CPUs.length; i++){
+
         pageObject
             //Verify that we are on the home page and click system builder
             .waitForElementVisible('@system')
@@ -127,8 +130,20 @@ module.exports = {
             //Add a Get text or something to see what been picked
             /*************************************************************/
             .getText('@price', function(result) {
-                console.log('Price:', result.value); //Ask about how to incorporate .length to get the last price
+                console.log('Price:', result.value); 
               })
-    }
+            .getText('@name', function(result) {
+                console.log('Name:', result.value); 
+            })
+            var count = 0;
+            // while (count <10){
+            //     pageObject
+            //     .getText(`(//td[contains(@class, "td__name")])[${count}]`, function(result) {
+            //         console.log('Name:', result.value); 
+            //         count++;
+            //     })
+            }
+        }
+   // }
 
-}
+//}
