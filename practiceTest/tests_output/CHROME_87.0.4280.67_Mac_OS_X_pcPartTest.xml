@@ -1,29 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
-            failures="0"
+            failures="1"
             tests="1">
 
   <testsuite name="pcPartTest"
-    errors="1" failures="0" hostname="" id="" package="pcPartTest" skipped="0"
-    tests="1" time="2.383" timestamp="">
+    errors="1" failures="1" hostname="" id="" package="pcPartTest" skipped="0"
+    tests="1" time="37.63" timestamp="">
   
-    <testcase name="Build A Computer Test..." classname="pcPartTest" time="2.383" assertions="2">
+    <testcase name="Build A Computer Test..." classname="pcPartTest" time="37.63" assertions="34">
 
     
 
     
-    <error message="i is not defined" type="error"><![CDATA[
-    ReferenceError: i is not defined
-    at Object.Build A Computer Test... (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/pcPartPicker/pcPartTest.js:38:66)
-    at Context.call (/usr/local/lib/node_modules/nightwatch/lib/testsuite/context.js:379:35)
-    at TestCase.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/testcase.js:53:31)
-    at Runnable.__runFn (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:376:80)
-    at Runnable.run (/usr/local/lib/node_modules/nightwatch/lib/testsuite/runnable.js:123:21)
-    at TestSuite.createRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:443:33)
-    at TestSuite.handleRunnable (/usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:448:18)
-    at /usr/local/lib/node_modules/nightwatch/lib/testsuite/index.js:376:21
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-    at async DefaultRunner.runTestSuite (/usr/local/lib/node_modules/nightwatch/lib/runner/test-runners/default.js:68:7)
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;button[data-product-tag=&#34;z2dqqs&#34;]&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5211ms)">    at Object.Build A Computer Test... (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/pcPartPicker/pcPartTest.js:41:14)</failure>
+
+    
+    <error message="Timed out while waiting for element &lt;button[data-product-tag=&#34;z2dqqs&#34;]&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(5211ms)[0m" type="error"><![CDATA[
+        at Object.Build A Computer Test... (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/pcPartPicker/pcPartTest.js:41:14)
     ]]></error>
     
     </testcase>
@@ -31,8 +85,9 @@
 
   
     <system-err>
-        ReferenceError: i is not defined
-       at Object.Build A Computer Test... (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/pcPartPicker/pcPartTest.js:38:66)
+        NoSuchElementError: An error occurred while running .click() command on &lt;(//td[contains(@class, &#34;td__remove&#34;)])[6]&gt;: 
+   {&#34;sessionId&#34;:&#34;eb4b2d20c68c43d19bd0e70ee2864d27&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
+       at runMicrotasks (&lt;anonymous&gt;)
        at processTicksAndRejections (internal/process/task_queues.js:93:5)
     </system-err>
   

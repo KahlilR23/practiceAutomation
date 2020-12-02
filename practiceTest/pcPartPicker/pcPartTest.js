@@ -25,125 +25,144 @@ module.exports = {
     },
     'Build A Computer Test...': browser => {
         
-        //for (i = 0; i < CPUs.length; i++){
+        
 
         pageObject
             //Verify that we are on the home page and click system builder
             .waitForElementVisible('@system')
+            .waitForElementPresent('@system')
             .click('@system')
+           // for (i = 0; i < CPUs.length; i++){
+        pageObject
             /*********************Add Optical Drive************************/
             .waitForElementVisible('@oDrive')
+            .waitForElementPresent('@oDrive')
             .click('@oDrive')
-            .waitForElementVisible(`button[data-product-tag=${od[0]}`)
-            .click(`button[data-product-tag=${od[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${od[i]}`)
+            .click(`button[data-product-tag=${od[i]}`)
+            
             /*************************************************************/
             /************************Add CPU*****************************/
             .waitForElementVisible('@cpu')
             .click('@cpu')
-            .waitForElementVisible(`button[data-product-tag=${CPUs[0]}`)
-            .click(`button[data-product-tag=${CPUs[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${CPUs[i]}`)
+            .click(`button[data-product-tag=${CPUs[i]}`)
+            
             /*************************************************************/
             /**********************Add CPU Cooler*************************/
             .waitForElementVisible('@cooler')
             .click('@cooler')
-            .waitForElementVisible(`button[data-product-tag=${cool[0]}`)
-            .click(`button[data-product-tag=${cool[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${cool[i]}`)
+            .click(`button[data-product-tag=${cool[i]}`)
+            
             /*************************************************************/
             /*********************Add Motherboard*************************/
             .waitForElementVisible('@mother')
             .click('@mother')
-            .waitForElementVisible(`button[data-product-tag=${moth[0]}`)
-            .click(`button[data-product-tag=${moth[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${moth[i]}`)
+            .click(`button[data-product-tag=${moth[i]}`)
+            
             /*************************************************************/
             /************************Add Memory***************************/
             .waitForElementVisible('@mem')
             .click('@mem')
-            .waitForElementVisible(`button[data-product-tag=${mem[0]}`)
-            .click(`button[data-product-tag=${mem[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${mem[i]}`)
+            .click(`button[data-product-tag=${mem[i]}`)
+            
             /*************************************************************/
             /**********************Add Storage****************************/
             .waitForElementVisible('@stor')
             .click('@stor')
-            .waitForElementVisible(`button[data-product-tag=${stor[0]}`)
-            .click(`button[data-product-tag=${stor[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${stor[i]}`)
+            .click(`button[data-product-tag=${stor[i]}`)
+            
             /*************************************************************/
             /*********************Add Video Card**************************/
             .waitForElementVisible('@vc')
             .click('@vc')
-            .waitForElementVisible(`button[data-product-tag=${vid[0]}`)
-            .click(`button[data-product-tag=${vid[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${vid[i]}`)
+            .click(`button[data-product-tag=${vid[i]}`)
+            
             /*************************************************************/
             /***********************Add Case*****************************/
             .waitForElementVisible('@case')
             .click('@case')
-            .waitForElementVisible(`button[data-product-tag=${cas[0]}`)
-            .click(`button[data-product-tag=${cas[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${cas[i]}`)
+            .click(`button[data-product-tag=${cas[i]}`)
+            
             /*************************************************************/
             /********************Add Power Supply*************************/
             .waitForElementVisible('@power')
             .click('@power')
-            .waitForElementVisible(`button[data-product-tag=${pow[0]}`)
-            .click(`button[data-product-tag=${pow[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${pow[i]}`)
+            .click(`button[data-product-tag=${pow[i]}`)
+            
             /*************************************************************/
             /******************Add Operating System***********************/
             .waitForElementVisible('@OS')
             .click('@OS')
-            .waitForElementVisible(`button[data-product-tag=${os[0]}`)
-            .click(`button[data-product-tag=${os[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${os[i]}`)
+            .click(`button[data-product-tag=${os[i]}`)
+            
             /*************************************************************/
             /**********************Add Software***************************/
             .waitForElementVisible('@soft')
             .click('@soft')
             .waitForElementVisible(`button[data-product-tag=${sof[0]}`)
             .click(`button[data-product-tag=${sof[0]}`)
-            //Add a Get text or something to see what been picked
+            
             /*************************************************************/
             /**********************Add Monitor****************************/
             .waitForElementVisible('@mon')
             .click('@mon')
-            .waitForElementVisible(`button[data-product-tag=${mon[0]}`)
+            .waitForElementVisible(`button[data-product-tag=${mon[i]}`)
             .click(`button[data-product-tag=${mon[0]}`)
-            //Add a Get text or something to see what been picked
+            
             /*************************************************************/
             /******************Add External Storage***********************/
             .waitForElementVisible('@ES')
             .click('@ES')
-            .waitForElementVisible(`button[data-product-tag=${es[0]}`)
-            .click(`button[data-product-tag=${es[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${es[i]}`)
+            .click(`button[data-product-tag=${es[i]}`)
+            
             /*************************************************************/
             /***********************Add Laptop***************************/
             .waitForElementVisible('@lap')
             .click('@lap')
-            .waitForElementVisible(`button[data-product-tag=${lap[0]}`)
-            .click(`button[data-product-tag=${lap[0]}`)
-            //Add a Get text or something to see what been picked
+            .waitForElementVisible(`button[data-product-tag=${lap[i]}`)
+            .click(`button[data-product-tag=${lap[i]}`)
+            
             /*************************************************************/
-            .getText('@price', function(result) {
-                console.log('Price:', result.value); 
-              })
-            .getText('@name', function(result) {
-                console.log('Name:', result.value); 
-            })
-            var count = 0;
-            // while (count <10){
-            //     pageObject
-            //     .getText(`(//td[contains(@class, "td__name")])[${count}]`, function(result) {
-            //         console.log('Name:', result.value); 
-            //         count++;
-            //     })
+            
+            // .getText('@name', function(result) {
+            //     console.log('Name:', result.value); 
+            // })
+            var count = 1;
+            while (count <10){
+        pageObject
+                .useXpath()
+                .getText(`(//td[contains(@class, "td__name")])[${count}]`, function(result) {
+                    console.log('Product:', result.value); 
+                 }) 
+                 count++;
             }
-        }
-   // }
+        pageObject
+            .getText('@price', function(result) {
+                console.log('Total Price:', result.value); 
+              })
+            var add = 1;
+            while (add <7){
+        pageObject
+            .useXpath()
+            .click(`(//td[contains(@class, "td__remove")])[2]`)
+            .click(`(//td[contains(@class, "td__remove")])[4]`)
+            .click(`(//td[contains(@class, "td__remove")])[6]`)
+            add = add + 1;
+            }
+            pageObject
+            .click(`(//td[contains(@class, "td__remove")])[2]`)
+            //.pause(5000)
+    }
 
-//}
+}
+
