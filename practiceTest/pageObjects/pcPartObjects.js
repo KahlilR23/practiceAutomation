@@ -3,7 +3,15 @@ module.exports = {
     url: 'https://pcpartpicker.com/',
     elements: {
         system:       'li[class="nav__categories--partlist"]',
+        guides:        'li[class="nav__categories--guides"]',
+        build:        'li[class="nav__categories--builds"]',
         products:     'li[class="nav__categories--browseProducts js-trigger--browseProducts"]',
+        title:        'h1[class="pageTitle"]',
+        //bcpu:         'a[href="/products/cpu/"]',
+        bcpu:{
+            selector: '(//a[contains(@href, "/products/cpu/")])[1]',
+            locateStrategy: 'xpath'
+        },
         cpu:{
             selector: '(//a[contains(@href, "/products/cpu/")])[4]',
             locateStrategy: 'xpath'

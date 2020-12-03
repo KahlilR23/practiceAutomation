@@ -23,6 +23,35 @@ module.exports = {
         pageObject
             .end()
     },
+    'Smoke Test...': browser => {
+        pageObject
+        /*********************System Builder Page**********************/
+            .waitForElementVisible('@system')
+            .waitForElementPresent('@system')
+            .click('@system')
+            .expect.element('@title').text.to.contain('System Builder')
+        /*************************************************************/
+        /*********************Build Guides Page**********************/
+        pageObject
+            .waitForElementVisible('@guides')
+            .waitForElementPresent('@guides')
+            .click('@guides')
+            .expect.element('@title').text.to.contain('Build Guides')
+        /*************************************************************/
+        /*********************Completed Builds Page**********************/
+        pageObject
+            .waitForElementVisible('@build')
+            .waitForElementPresent('@build')
+            .click('@build')
+            .expect.element('@title').text.to.contain('Completed Builds')
+        /*************************************************************/
+        /*********************Browse Products Page**********************/
+        pageObject
+            .waitForElementVisible('@products')
+            .waitForElementPresent('@products')
+            .click('@products')
+            
+    },
     'Build A Computer Test...': browser => {
         
         
@@ -38,71 +67,71 @@ module.exports = {
             .waitForElementVisible('@oDrive')
             .waitForElementPresent('@oDrive')
             .click('@oDrive')
-            .waitForElementVisible(`button[data-product-tag=${od[i]}`)
-            .click(`button[data-product-tag=${od[i]}`)
+            //.waitForElementVisible(`button[data-product-tag=${od[i]}`)
+            .click(`button[data-product-tag=${od[0]}`)
             
             /*************************************************************/
             /************************Add CPU*****************************/
             .waitForElementVisible('@cpu')
             .click('@cpu')
-            .waitForElementVisible(`button[data-product-tag=${CPUs[i]}`)
-            .click(`button[data-product-tag=${CPUs[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${CPUs[0]}`)
+            .click(`button[data-product-tag=${CPUs[0]}`)
             
             /*************************************************************/
             /**********************Add CPU Cooler*************************/
             .waitForElementVisible('@cooler')
             .click('@cooler')
-            .waitForElementVisible(`button[data-product-tag=${cool[i]}`)
-            .click(`button[data-product-tag=${cool[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${cool[0]}`)
+            .click(`button[data-product-tag=${cool[0]}`)
             
             /*************************************************************/
             /*********************Add Motherboard*************************/
             .waitForElementVisible('@mother')
             .click('@mother')
-            .waitForElementVisible(`button[data-product-tag=${moth[i]}`)
-            .click(`button[data-product-tag=${moth[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${moth[0]}`)
+            .click(`button[data-product-tag=${moth[0]}`)
             
             /*************************************************************/
             /************************Add Memory***************************/
             .waitForElementVisible('@mem')
             .click('@mem')
-            .waitForElementVisible(`button[data-product-tag=${mem[i]}`)
-            .click(`button[data-product-tag=${mem[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${mem[0]}`)
+            .click(`button[data-product-tag=${mem[0]}`)
             
             /*************************************************************/
             /**********************Add Storage****************************/
             .waitForElementVisible('@stor')
             .click('@stor')
-            .waitForElementVisible(`button[data-product-tag=${stor[i]}`)
-            .click(`button[data-product-tag=${stor[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${stor[0]}`)
+            .click(`button[data-product-tag=${stor[0]}`)
             
             /*************************************************************/
             /*********************Add Video Card**************************/
             .waitForElementVisible('@vc')
             .click('@vc')
-            .waitForElementVisible(`button[data-product-tag=${vid[i]}`)
-            .click(`button[data-product-tag=${vid[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${vid[0]}`)
+            .click(`button[data-product-tag=${vid[0]}`)
             
             /*************************************************************/
             /***********************Add Case*****************************/
             .waitForElementVisible('@case')
             .click('@case')
-            .waitForElementVisible(`button[data-product-tag=${cas[i]}`)
-            .click(`button[data-product-tag=${cas[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${cas[0]}`)
+            .click(`button[data-product-tag=${cas[0]}`)
             
             /*************************************************************/
             /********************Add Power Supply*************************/
             .waitForElementVisible('@power')
             .click('@power')
-            .waitForElementVisible(`button[data-product-tag=${pow[i]}`)
-            .click(`button[data-product-tag=${pow[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${pow[0]}`)
+            .click(`button[data-product-tag=${pow[0]}`)
             
             /*************************************************************/
             /******************Add Operating System***********************/
             .waitForElementVisible('@OS')
             .click('@OS')
-            .waitForElementVisible(`button[data-product-tag=${os[i]}`)
-            .click(`button[data-product-tag=${os[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${os[0]}`)
+            .click(`button[data-product-tag=${os[0]}`)
             
             /*************************************************************/
             /**********************Add Software***************************/
@@ -115,22 +144,22 @@ module.exports = {
             /**********************Add Monitor****************************/
             .waitForElementVisible('@mon')
             .click('@mon')
-            .waitForElementVisible(`button[data-product-tag=${mon[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${mon[0]}`)
             .click(`button[data-product-tag=${mon[0]}`)
             
             /*************************************************************/
             /******************Add External Storage***********************/
             .waitForElementVisible('@ES')
             .click('@ES')
-            .waitForElementVisible(`button[data-product-tag=${es[i]}`)
-            .click(`button[data-product-tag=${es[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${es[0]}`)
+            .click(`button[data-product-tag=${es[0]}`)
             
             /*************************************************************/
             /***********************Add Laptop***************************/
             .waitForElementVisible('@lap')
             .click('@lap')
-            .waitForElementVisible(`button[data-product-tag=${lap[i]}`)
-            .click(`button[data-product-tag=${lap[i]}`)
+            .waitForElementVisible(`button[data-product-tag=${lap[0]}`)
+            .click(`button[data-product-tag=${lap[0]}`)
             
             /*************************************************************/
             
@@ -151,7 +180,7 @@ module.exports = {
                 console.log('Total Price:', result.value); 
               })
             var add = 1;
-            while (add <7){
+            while (add <6){
         pageObject
             .useXpath()
             .click(`(//td[contains(@class, "td__remove")])[2]`)
@@ -163,6 +192,6 @@ module.exports = {
             .click(`(//td[contains(@class, "td__remove")])[2]`)
             //.pause(5000)
     }
-
+   // }
 }
 

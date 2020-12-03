@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
-            failures="1"
-            tests="1">
+            failures="0"
+            tests="2">
 
   <testsuite name="pcPartTest"
-    errors="1" failures="1" hostname="" id="" package="pcPartTest" skipped="0"
-    tests="1" time="37.63" timestamp="">
+    errors="1" failures="0" hostname="" id="" package="pcPartTest" skipped="0"
+    tests="2" time="33.93" timestamp="">
   
-    <testcase name="Build A Computer Test..." classname="pcPartTest" time="37.63" assertions="34">
+    <testcase name="Smoke Test..." classname="pcPartTest" time="3.046" assertions="11">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Build A Computer Test..." classname="pcPartTest" time="30.89" assertions="30">
 
     
 
@@ -68,16 +93,12 @@
     
 
     
-
-    
-
-    
-
-      <failure message="Timed out while waiting for element &lt;button[data-product-tag=&#34;z2dqqs&#34;]&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5211ms)">    at Object.Build A Computer Test... (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/pcPartPicker/pcPartTest.js:41:14)</failure>
-
-    
-    <error message="Timed out while waiting for element &lt;button[data-product-tag=&#34;z2dqqs&#34;]&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m [0;90m(5211ms)[0m" type="error"><![CDATA[
-        at Object.Build A Computer Test... (/Users/superstar/DevMountain/practiceAutomation/practiceAutomationGit/practiceTest/pcPartPicker/pcPartTest.js:41:14)
+    <error message="An error occurred while running .click() command on &lt;(//td[contains(@class, &#34;td__remove&#34;)])[2]&gt;: " type="error"><![CDATA[
+    NoSuchElementError: An error occurred while running .click() command on &lt;(//td[contains(@class, &#34;td__remove&#34;)])[2]&gt;: 
+    at ClickElement.noSuchElementError (/usr/local/lib/node_modules/nightwatch/lib/element/command.js:399:12)
+    at Object.errorHandler (/usr/local/lib/node_modules/nightwatch/lib/api/element-commands/_baseElementCommand.js:42:30)
+    at PeriodicPromise.runAction (/usr/local/lib/node_modules/nightwatch/lib/utils/periodic-promise.js:64:29)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
     ]]></error>
     
     </testcase>
@@ -85,9 +106,8 @@
 
   
     <system-err>
-        NoSuchElementError: An error occurred while running .click() command on &lt;(//td[contains(@class, &#34;td__remove&#34;)])[6]&gt;: 
-   {&#34;sessionId&#34;:&#34;eb4b2d20c68c43d19bd0e70ee2864d27&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
-       at runMicrotasks (&lt;anonymous&gt;)
+        NoSuchElementError: An error occurred while running .click() command on &lt;(//td[contains(@class, &#34;td__remove&#34;)])[2]&gt;: 
+   {&#34;sessionId&#34;:&#34;1a2a9f89f9df0d065da119920a153d5a&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}
        at processTicksAndRejections (internal/process/task_queues.js:93:5)
     </system-err>
   
